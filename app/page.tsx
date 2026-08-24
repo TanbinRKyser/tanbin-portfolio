@@ -5,7 +5,7 @@ const experiences = [
     period: 'Nov 2025 — Present',
     role: 'Student Assistant, Quality and Usability Lab',
     org: 'Technische Universität Berlin',
-    detail: 'Built an LLM-as-a-Judge framework with 0.71 Spearman correlation, curated a 2,400-article German news dataset, and reduced preference bias by 79.36% through SFT, DPO, RLHF, and RLAIF.',
+    detail: 'Researching LLM-as-a-Judge methods for summary evaluation, including dataset curation, evaluation-prompt design, inference optimization, and model alignment.',
   },
   {
     period: 'Dec 2019 — Mar 2024',
@@ -58,8 +58,8 @@ export default function Home() {
 
       <section className="signal-strip" aria-label="Professional highlights">
         <div><strong>4+</strong><span>Years of experience</span></div>
-        <div><strong>0.71</strong><span>LLM-judge correlation</span></div>
-        <div><strong>79.36%</strong><span>Preference bias reduced</span></div>
+        <div><strong>6</strong><span>Emotion classes</span></div>
+        <div><strong>76%</strong><span>Multilingual QA accuracy</span></div>
         <div><strong>10K+</strong><span>Concurrent requests</span></div>
       </section>
 
@@ -97,10 +97,6 @@ export default function Home() {
             <div className="tech-list" aria-label="Technologies"><span>Python</span><span>PyTorch</span><span>OpenCV</span><span>EfficientViT</span><span>Grad-CAM</span></div>
           </div>
           <div className="project-visual visual-dfer">
-            <figure className="dfer-figure dfer-explainability">
-              <img src="/dfer-gradcam.png" alt="EfficientViT Grad-CAM visualization highlighting the facial regions used to recognize a driver’s emotion" />
-              <figcaption>EfficientViT global focus · Grad-CAM</figcaption>
-            </figure>
             <figure className="dfer-figure dfer-matrix">
               <img src="/dfer-confusion-matrix.png" alt="Normalized confusion matrix for six driver emotion classes, showing near-perfect classification and 93 percent accuracy for anger" />
               <figcaption>Six-class normalized confusion matrix</figcaption>
