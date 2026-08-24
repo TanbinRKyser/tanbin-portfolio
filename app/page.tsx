@@ -3,35 +3,29 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 const experiences = [
   {
     period: 'Nov 2025 — Present',
-    role: 'Student Assistant',
-    org: 'Technical University of Berlin',
-    detail: 'Researching small language-model-based automated evaluation techniques for summarization.',
+    role: 'Student Assistant, Quality and Usability Lab',
+    org: 'Technische Universität Berlin',
+    detail: 'Built an LLM-as-a-Judge framework with 0.71 Spearman correlation, curated a 2,400-article German news dataset, and reduced preference bias by 79.36% through SFT, DPO, RLHF, and RLAIF.',
   },
   {
-    period: 'Oct 2025 — Present',
-    role: "Master’s Thesis Researcher",
-    org: 'Brandenburg University of Technology',
-    detail: 'Developing Markov agent-based automated parameter selection for particle tracking in microgravity experiments.',
-  },
-  {
-    period: 'Dec 2019 — Jan 2024',
-    role: 'Full-Stack Web Developer',
-    org: 'Self-employed',
-    detail: 'Built performant web platforms with Spring, React, Next.js, Kafka, and AWS—improving support outcomes and application speed.',
+    period: 'Dec 2019 — Mar 2024',
+    role: 'Full-Stack Developer',
+    org: 'Freelance Software Engineer',
+    detail: 'Built time-series inventory forecasting and personalized marketing automation, improving festival logistics planning by 25% and increasing order conversions.',
   },
   {
     period: 'Feb 2015 — Nov 2019',
     role: 'Software Engineer',
-    org: 'HTB',
-    detail: 'Delivered enterprise systems spanning radar-control simulation, CRM automation, and a high-availability power-plant database.',
+    org: 'Hi-Tech Bangla Ltd.',
+    detail: 'Integrated OpenStreetMap and modeled 15+ radar-control scenarios while engineering CRM, inventory, and warehouse synchronization systems that reduced inventory congestion to 30%.',
   },
 ];
 
 const skillGroups = [
-  ['AI & computer vision', 'PyTorch, Transformers, OpenCV, scikit-learn, LangChain, NumPy, Pandas'],
-  ['Software engineering', 'Python, Java 11, TypeScript, SQL, Bash, Spring Boot, React, Next.js'],
-  ['Data & infrastructure', 'PostgreSQL, MongoDB, Oracle, Chroma, AWS, GKE, Docker, Kubernetes, Terraform'],
-  ['Quality & delivery', 'MLflow, W&B, Jenkins, Git, JUnit, Mockito, Jest, Selenium, TDD, Agile'],
+  ['ML, AI & computer vision', 'PyTorch, Hugging Face Transformers, OpenCV, scikit-image, deep learning, NLP, generative AI'],
+  ['LLM engineering', 'Qwen, Mistral, Gemma, RAG, LangChain, LangGraph, SFT, DPO, prompt engineering'],
+  ['Backend development', 'Python, Java, Kotlin, TypeScript, Spring Boot, FastAPI, REST, microservices, Hibernate'],
+  ['Data, MLOps & cloud', 'PostgreSQL, MongoDB, FAISS, Chroma, MLflow, W&B, Docker, Kubernetes, Terraform, AWS, GKE'],
 ];
 
 export default function Home() {
@@ -47,9 +41,9 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> AI researcher &amp; software engineer</p>
+          <p className="eyebrow"><span /> AI &amp; Backend Engineering</p>
           <h1>Building intelligent systems that work in the <em>real world.</em></h1>
-          <p className="hero-intro">I’m Md. Tanbin Rahid Kyser, a computer scientist working across machine learning, computer vision, and full-stack engineering.</p>
+          <p className="hero-intro">I’m Md. Tanbin Rahid Kyser, a software engineer with 4+ years of experience building scalable backend systems, enterprise applications, and AI-powered solutions.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
             <a className="button button-quiet" href="https://github.com/TanbinRKyser" target="_blank" rel="noreferrer">View GitHub <Arrow /></a>
@@ -57,16 +51,16 @@ export default function Home() {
         </div>
         <aside className="hero-card" aria-label="Current focus">
           <div className="orb orb-one" /><div className="orb orb-two" />
-          <div className="focus-card"><p>Current focus</p><strong>LLM evaluation &amp; particle tracking</strong><span>Researching at TU Berlin and BTU Cottbus</span></div>
+          <div className="focus-card"><p>Current focus</p><strong>LLM evaluation &amp; alignment</strong><span>Researching at TU Berlin’s Quality and Usability Lab</span></div>
           <div className="code-note" aria-hidden="true"><span>01</span><code>research → prototype → impact</code></div>
         </aside>
       </section>
 
       <section className="signal-strip" aria-label="Professional highlights">
-        <div><strong>9+</strong><span>Years in software</span></div>
-        <div><strong>5+</strong><span>Enterprise applications</span></div>
-        <div><strong>99.9%</strong><span>Production uptime delivered</span></div>
-        <div><strong>AI + Web</strong><span>End-to-end perspective</span></div>
+        <div><strong>4+</strong><span>Years of experience</span></div>
+        <div><strong>0.71</strong><span>LLM-judge correlation</span></div>
+        <div><strong>79.36%</strong><span>Preference bias reduced</span></div>
+        <div><strong>10K+</strong><span>Concurrent requests</span></div>
       </section>
 
       <section className="section work-section" id="work">
@@ -77,15 +71,20 @@ export default function Home() {
           <div className="project-copy">
             <div className="pill-row"><span>Natural language processing</span><span>2025</span></div>
             <h3>Multilingual Customer Support Bot</h3>
-            <p>A context-aware support assistant combining fine-tuned T5-Flan, retrieval-augmented generation, and a local knowledge base—76% more accurate than a TF-IDF baseline.</p>
-            <div className="tech-list" aria-label="Technologies"><span>PyTorch</span><span>FastAPI</span><span>LangChain</span><span>Angular</span><span>ChromaDB</span></div>
+            <p>A context-aware multilingual RAG pipeline built with more than 5,000 Amazon QA pairs, achieving 76% QA accuracy over a TF-IDF retrieval baseline with LIME and Captum explainability.</p>
+            <div className="tech-list" aria-label="Technologies"><span>PyTorch</span><span>FastAPI</span><span>LangChain</span><span>FAISS</span><span>mT5-base</span></div>
             <a className="text-link" href="https://github.com/TanbinRKyser/multilingual-customer-support" target="_blank" rel="noreferrer">View repository <Arrow /></a>
           </div>
-          <div className="project-visual visual-language" aria-hidden="true">
-            <div className="dialog dialog-one"><span>EN</span>Hello—how can I help?</div>
-            <div className="dialog dialog-two"><span>DE</span>Wie kann ich helfen?</div>
-            <div className="dialog dialog-three"><span>BN</span>আমি কীভাবে সাহায্য করতে পারি?</div>
-            <div className="accuracy"><strong>+76%</strong><span>accuracy</span></div>
+          <div className="project-visual visual-support">
+            <figure className="support-figure support-usage">
+              <img src="/support-bot-usage.png" alt="Multilingual customer-support bot interface showing a German shipping question, a source-grounded answer, retrieval controls, confidence, and retrieved sources" />
+              <figcaption>Multilingual input · source-grounded RAG response</figcaption>
+            </figure>
+            <figure className="support-figure support-explainability">
+              <img src="/support-bot-explainability.png" alt="Explainability dashboard showing overall confidence, retrieval and answer-quality scores, and the top retrieved multilingual sources" />
+              <figcaption>Confidence and retrieval explainability</figcaption>
+            </figure>
+            <div className="support-result"><strong>76%</strong><span>QA accuracy</span></div>
           </div>
         </article>
 
@@ -93,14 +92,20 @@ export default function Home() {
           <div className="project-number">02 / 03</div>
           <div className="project-copy">
             <div className="pill-row"><span>Computer vision</span><span>Research</span></div>
-            <h3>Particle Tracking in Dynamic Environments</h3>
-            <p>A stereo-image tracking pipeline for microscopic particles using classical image processing, YOLO, Hungarian association, Kalman filtering, TrackMate, and ByteTrack.</p>
-            <div className="tech-list" aria-label="Technologies"><span>PyTorch</span><span>YOLO</span><span>ByteTrack</span><span>scikit-image</span></div>
+            <h3>Driver Facial Emotion Recognition System</h3>
+            <p>A lightweight dual-branch ShuffleNet and EfficientViT architecture for ADAS facial emotion recognition, combining local facial features with global context and validated using Grad-CAM.</p>
+            <div className="tech-list" aria-label="Technologies"><span>Python</span><span>PyTorch</span><span>OpenCV</span><span>EfficientViT</span><span>Grad-CAM</span></div>
           </div>
-          <div className="project-visual visual-particles" aria-hidden="true">
-            <span className="particle p1" /><span className="particle p2" /><span className="particle p3" /><span className="particle p4" />
-            <div className="track t1" /><div className="track t2" /><div className="track t3" />
-            <div className="visual-label">detect · associate · track</div>
+          <div className="project-visual visual-dfer">
+            <figure className="dfer-figure dfer-explainability">
+              <img src="/dfer-gradcam.png" alt="EfficientViT Grad-CAM visualization highlighting the facial regions used to recognize a driver’s emotion" />
+              <figcaption>EfficientViT global focus · Grad-CAM</figcaption>
+            </figure>
+            <figure className="dfer-figure dfer-matrix">
+              <img src="/dfer-confusion-matrix.png" alt="Normalized confusion matrix for six driver emotion classes, showing near-perfect classification and 93 percent accuracy for anger" />
+              <figcaption>Six-class normalized confusion matrix</figcaption>
+            </figure>
+            <div className="dfer-result"><strong>94%</strong><span>F1-score</span></div>
           </div>
         </article>
 
@@ -109,13 +114,13 @@ export default function Home() {
           <div className="project-copy">
             <div className="pill-row"><span>Distributed systems</span><span>Cloud</span></div>
             <h3>Currency Exchange Platform</h3>
-            <p>A three-service platform designed for more than 1,000 API calls per second, with resilient service discovery, observability, and container orchestration.</p>
+            <p>A scalable microservices-based currency exchange platform supporting 10,000+ concurrent requests through Kubernetes horizontal scaling and zero-downtime deployments.</p>
             <div className="tech-list" aria-label="Technologies"><span>Spring Cloud</span><span>Docker</span><span>Kubernetes</span><span>GKE</span><span>Zipkin</span></div>
             <a className="text-link" href="https://github.com/TanbinRKyser/Currency-Exchange" target="_blank" rel="noreferrer">View repository <Arrow /></a>
           </div>
           <div className="project-visual visual-cloud" aria-hidden="true">
             <div className="service service-one">Exchange</div><div className="service service-two">Gateway</div><div className="service service-three">Conversion</div>
-            <div className="cloud-stat"><strong>1K+</strong><span>requests / sec</span></div>
+            <div className="cloud-stat"><strong>10K+</strong><span>concurrent requests</span></div>
           </div>
         </article>
       </section>
@@ -147,8 +152,8 @@ export default function Home() {
         <div className="section">
           <div className="section-heading"><p className="kicker">Education</p><h2>Where rigorous study meets practical curiosity.</h2></div>
           <div className="education-grid">
-            <article><span>2024 — 2027, expected</span><h3>M.Sc. Artificial Intelligence</h3><p>Brandenburg University of Technology, Cottbus, Germany</p><small>Explainable ML · ML at scale · Image processing · Computer vision</small></article>
-            <article><span>Bachelor’s degree</span><h3>B.Sc. Computer Science &amp; Engineering</h3><p>Islamic University of Technology, Gazipur, Bangladesh</p><small>Thesis: A QoS-aware Resource Allocation Method for Cloud Computing</small></article>
+            <article><span>Apr 2024 — Present · Grade 1.9</span><h3>M.Sc. Artificial Intelligence</h3><p>Brandenburg University of Technology, Cottbus, Germany</p><small>Ongoing · English C1 · German B1 · Bengali native</small></article>
+            <article><span>Completed Nov 2015 · CGPA 3.41/4.00</span><h3>B.Sc. Computer Science &amp; Engineering</h3><p>Islamic University of Technology, Gazipur, Bangladesh</p><small>Publication: Community Recommendation Approach for Social Networking Sites based on Mining Rules (ICEEICT, 2015)</small></article>
           </div>
         </div>
       </section>
@@ -157,7 +162,7 @@ export default function Home() {
         <div className="footer-main">
           <p className="kicker">Keep exploring</p>
           <h2>Curious by nature.<br /><em>Driven by impact.</em></h2>
-          <p className="footer-note">When I’m away from a model or codebase, you’ll likely find me hiking, taking photographs, or learning through a new course.</p>
+          <p className="footer-note">I build scalable software and applied AI systems, from LLM evaluation and computer vision to cloud-native backend platforms.</p>
           <a className="button footer-button" href="https://github.com/TanbinRKyser" target="_blank" rel="noreferrer">Explore my GitHub <Arrow /></a>
         </div>
         <div className="footer-bottom"><span>© 2026 Md. Tanbin Rahid Kyser</span><a href="#top">Back to top ↑</a></div>
