@@ -56,11 +56,11 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="signal-strip" aria-label="Professional highlights">
+      <section className="signal-strip" aria-label="Professional snapshot">
         <div><strong>4+</strong><span>Years of experience</span></div>
-        <div><strong>6</strong><span>Emotion classes</span></div>
-        <div><strong>76%</strong><span>Multilingual QA accuracy</span></div>
-        <div><strong>10K+</strong><span>Concurrent requests</span></div>
+        <div><strong>AI + LLMs</strong><span>Research interest</span></div>
+        <div><strong>Python + Java</strong><span>Core engineering skills</span></div>
+        <div><strong>Cloud-native</strong><span>Backend systems focus</span></div>
       </section>
 
       <section className="section work-section" id="work">
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="footer-main">
           <p className="kicker">Keep exploring</p>
           <h2>Curious by nature.<br /><em>Driven by impact.</em></h2>
-          <p className="footer-note">I build scalable software and applied AI systems, from LLM evaluation and computer vision to cloud-native backend platforms.</p>
+          <p className="footer-note">I build scalable software and applied AI systems. When I am not coding, you can find me learning about new recipes or hiking in the mountains. </p>
           <a className="button footer-button" href="https://github.com/TanbinRKyser" target="_blank" rel="noreferrer">Explore my GitHub <Arrow /></a>
         </div>
         <div className="footer-bottom"><span>© 2026 Md. Tanbin Rahid Kyser</span><a href="#top">Back to top ↑</a></div>
