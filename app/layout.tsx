@@ -5,11 +5,11 @@ const siteUrl = new URL(process.env.URL ?? 'http://localhost:3000');
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
-  title: 'Tanbin Kyser — AI Researcher & Software Engineer',
+  title: 'Tanbin R Kyser : AI Researcher & Software Engineer',
   description:
     'Portfolio of Md. Tanbin Rahid Kyser, working across machine learning, computer vision, and full-stack engineering.',
   openGraph: {
-    title: 'Tanbin Kyser — AI Researcher & Software Engineer',
+    title: 'Tanbin R Kyser : AI Researcher & Software Engineer',
     description:
       'Applied AI research, computer vision, and full-stack software engineering.',
     type: 'website',
